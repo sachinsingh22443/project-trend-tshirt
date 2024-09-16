@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending T-Shirts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <span id="trend-logo">Trends</span>
+            </div>
+            <div class="lis">
+                <ul>
+                    <li><a  href="#home" onclick=home()>Home</a></li>
+                    <li><a  href="#shop" onclick=shop()>Shop</a></li>
+                    <li><a  href="#aboutus" onclick=about()>About</a></li>
+                    <li><a href="#contact" onclick=contact()>Contacts</a></li>
+                    <li><a id="cart-button" href="#cart-section" onclick=showCart()>Cart</a></li>
+                </ul>
+            </div>
+        </div>
+     </nav>
+
+     <header>
+       
+        <div class="mainpage" id="home">
+            <div class="content">
+                <h1>New Branded Trending T-Shirts</h1>
+                <p>Explore our latest collection of T-shirts designed for style and comfort. Crafted from high-quality fabrics, our T-shirts are perfect for every occasion. Discover modern designs, vibrant colors, and unique prints that add the perfect touch to your wardrobe.</p>
+                <button class="explore-btn" onclick="shop()">Explore All</button>
+            </div>
+            <div class="image-section">
+                <img src="sale2.avif" alt="Sale T-Shirt">
+            </div>
+        </div>
+    </header>
+    <div class="para">
+        <h3><span>Men's Wear</span></h3>
+     </div>
+    <!-- Main Content -->
+    <main>
+        <div class="trends" id="shop" style ="display: flex;">
+            <!-- Example T-shirt Cards -->
+            <div class="card" data-name="Men T-Shirt" data-price="799">
+                <div class="tshirt">
+                    <img src="ts5.avif" alt="tshirt" onclick="showDetails(this)">
+                </div>
+                <div class="rating">
+                    <div class="rate">
+                        <ul>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <a href="#" onclick="addToCart(this)"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <p>Men T-Shirt</p>
+                <p class="price">₹799</p>
+            </div>
+            <!-- Repeat for other T-shirts -->
+
+            <div class="card" data-name="Men T-Shirt" data-price="899">
+                <div class="tshirt">
+                    <img src="tshirt.jpg" alt="tshirt" onclick="showDetails(this)">
+                </div>
+                <div class="rating">
+                    <div class="rate">
+                        <ul>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <a href="#" onclick="addToCart(this)"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <p>Men T-Shirt</p>
+                <p class="price">₹899</p>
+            </div>
+
+            <div class="card" data-name="Men T-Shirt" data-price="999">
+                <div class="tshirt">
+                    <img src="img1.jpg" alt="tshirt" onclick="showDetails(this)">
+                </div>
+                <div class="rating">
+                    <div class="rate">
+                        <ul>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <a href="#" onclick="addToCart(this)"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <p>Men T-Shirt</p>
+                <p class="price">₹999</p>
+            </div>
+
+            <div class="card" data-name="Men T-Shirt" data-price="1099">
+                <div class="tshirt">
+                    <img src="img2.jpeg" alt="tshirt" onclick="showDetails(this)">
+                </div>
+                <div class="rating">
+                    <div class="rate">
+                        <ul>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <a href="#" onclick="addToCart(this)"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <p>Men T-Shirt</p>
+                <p class="price">₹1099</p>
+            </div>
+
+            <div class="card" data-name="Men T-Shirt" data-price="1199">
+                <div class="tshirt">
+                    <img src="img3.jpeg" alt="tshirt" onclick="showDetails(this)">
+                </div>
+                <div class="rating">
+                    <div class="rate">
+                        <ul>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <a href="#" onclick="addToCart(this)"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <p>Men T-Shirt</p>
+                <p class="price">₹1199</p>
+            </div>
+
+            <div class="card" data-name="Men T-Shirt" data-price="1299">
+                <div class="tshirt">
+                    <img src="img4.jpg" alt="tshirt" onclick="showDetails(this)">
+                </div>
+                <div class="rating">
+                    <div class="rate">
+                        <ul>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <a href="#" onclick="addToCart(this)"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <p>Men T-Shirt</p>
+                <p class="price">₹1299</p>
+            </div>
+
+            <div class="card" data-name="Men T-Shirt" data-price="1399">
+                <div class="tshirt">
+                    <img src="img5.png" alt="tshirt" onclick="showDetails(this)">
+                </div>
+                <div class="rating">
+                    <div class="rate">
+                        <ul>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <a href="#" onclick="addToCart(this)"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <p>Men T-Shirt</p>
+                <p class="price">₹1399</p>
+            </div>
+
+            <div class="card" data-name="Men T-Shirt" data-price="1499">
+                <div class="tshirt">
+                    <img src="img8.png" alt="tshirt" onclick="showDetails(this)">
+                </div>
+                <div class="rating">
+                    <div class="rate">
+                        <ul>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <a href="#" onclick="addToCart(this)"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <p>Men T-Shirt</p>
+                <p class="price">₹1499</p>
+            </div>
+
+            <div class="card" data-name="Men T-Shirt" data-price="1599">
+                <div class="tshirt">
+                    <img src="img7.png" alt="tshirt" onclick="showDetails(this)">
+                </div>
+                <div class="rating">
+                    <div class="rate">
+                        <ul>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <a href="#" onclick="addToCart(this)"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <p>Men T-Shirt</p>
+                <p class="price">₹1599</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Product Details -->
+    <div class="page" id="product-details" style="display: none;">
+        <div class="card2">
+            <img id="newimg" src="" alt="T-Shirt" class="tshirt-image">
+        </div>
+        <div class="detail">
+            <h2>Product Details</h2>
+            <p><strong>Size</strong></p>
+            <select id="product-size" name="size">
+                <option value="M">M</option>
+                <option value="XL">XL</option>
+                <option value="Large">Large</option>
+                <option value="XXL">XXL</option>
+            </select>
+            <p><strong>Quantity</strong></p>
+            <input type="number" id="product-quantity" min="1" max="100" value="1">
+            <p><strong>Price</strong></p>
+            <p id="product-price">₹999</p>
+            <div class="buttons">
+                <button class="btn buy-now" onclick="buy()" style="color:#fff;background-color: #007bff;">Buy Now</button>
+                <button class="btn add-to-cart" onclick="addToCart()">Add To Cart</button>
+                <button class="btn back" onclick="back()">Back</button>
+            </div>
+            <p><strong>Details</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div id="cart-section" style="display: none;">
+        <h2>Cart</h2>
+        <table id="cart-items">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Image</th>
+                    <th>Size</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Cart items will be dynamically added here -->
+            </tbody>
+        </table>
+        <button onclick="checkout()" style="color:#fff;background-color: #007bff;">Checkout</button>
+    </div>
+
+    <footer>
+        <div class="foot" id="foot1">
+            <div class="box">
+                <ul class="unorder">
+                    <li>Produced</li>
+                    <li>Contacts</li>
+                    <li>About us</li>
+                    <li>Blogs</li>
+                    <li>Gmail</li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul class="unorder">
+                    <li>Sachin Singh</li>
+                    <li>8120380467</li>
+                    <li>In detail</li>
+                    <li>Favorite places</li>
+                    <li>Ssachin0844@gmail.com</li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="boxs">
+                    <input type="text" placeholder="Enter your email">
+                    <button type="submit" class="butt">Sign Up</button>
+                </div>
+            </div>
+        </div>
+     </footer>
+<!-- about us  -->
+<div class="aboutus" id="aboutus" >
+    <div class="about-container">
+        <div class="about-section">
+            <h2>About Us</h2>
+            <div class="profile">
+                <h3>Personal Information</h3>
+                <ul>
+                    <li><strong>First Name:</strong> Sachin</li>
+                    <li><strong>Last Name:</strong> Singh</li>
+                    <li><strong>Profession:</strong> Web Developer</li>
+                    <li><strong>Study:</strong> 12th</li>
+                    <li><strong>School:</strong> Gandhi High School</li>
+                </ul>
+            </div>
+            <div class="profile">
+                <h3>Education</h3>
+                <ul>
+                    <li><strong>College:</strong> UIET Panjab University</li>
+                    <li><strong>Address:</strong> Parikshat Ka Pura</li>
+                    <li><strong>Graduation:</strong> B.E CSE</li>
+                    <li><strong>State:</strong> Madhya Pradesh</li>
+                    <li><strong>District:</strong> Morena</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contacts" id="contact" >
+    <div class="contact-container">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>Email:</strong> Ssachin0844@gmail.com</p>
+            <p><strong>Phone:</strong> +91812038067</p>
+            <p><strong>Address:</strong> Hoshiarpur  Street, City, India</p>
+            <p><strong>Follow Us:</strong></p>
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="purchase-details" style="display: none;">
+        <!-- Purchase details will be dynamically inserted here -->
+    </div>
+    
+    
+    <table id="order-summary" style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+        <h3 style="display: none;">Order Summary</h3>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Size</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Purchase details will be dynamically inserted here -->
+        </tbody>
+    </table>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
